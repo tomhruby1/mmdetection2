@@ -29,6 +29,6 @@ RUN pip install --no-cache-dir -r requirements/build.txt
 RUN pip install --no-cache-dir -e .
 
 # Custom pkgs installation
-RUN apt install nano tmux
+RUN apt-get update && apt-get install -y nano tmux
 # for mmdet v2 mmengine not needed?
-RUN pip install mmengine 
+RUN pip install --no-cache-dir mmengine wandb
