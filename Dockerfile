@@ -22,8 +22,8 @@ RUN pip install --no-cache-dir mmcv-full==1.3.17 -f https://download.openmmlab.c
 
 # Install MMDetection
 RUN conda clean --all
-RUN git clone -b 2.x --single-branch https://github.com/open-mmlab/mmdetection.git /mmdetection
-WORKDIR /mmdetection
+RUN git clone https://github.com/tomhruby1/mmdetection2.git /mmdetection2
+WORKDIR /mmdetection2/mmdetection-2.28.2
 ENV FORCE_CUDA="1"
 RUN pip install --no-cache-dir -r requirements/build.txt
 RUN pip install --no-cache-dir -e .
