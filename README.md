@@ -14,7 +14,8 @@ To use nvidia acceleration the NVIDIA Container Toolkit is necessary, folow the 
 
 ## Getting started
 1. clone this repository
-2. download weights to `[repository_dir]/checkpoints`
+2. download weights to `[repository_dir]/checkpoints` from [HERE](https://drive.google.com/file/d/1nIPXXu0-uetpcWU_SW3mNw4kxNBFvoUh/view?usp=sharing)
+
 3. build docker container using
 ```
     cd mmdetection-2.28
